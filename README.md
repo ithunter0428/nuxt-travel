@@ -1,93 +1,69 @@
-<p align="center">
-  <a href="https://nuxtjs.org/">
-  <img src="https://avatars2.githubusercontent.com/u/23360933?s=200&v=4" height="60">
-  </a>
-  +
-  <img src="https://geekytheory.com/wp-content/uploads/2014/03/markdown_inte-1024x630.png" height="60">
-</p>
-<h1 align="center">
-  Nuxt + Markdown
-</h1>
+# travel-with-me
 
-## ⚡️ Live
-[Check it live](https://benevolent-mochi-1eeef3.netlify.app/)
+## Build Setup
 
-## ✨ Quick start
+```bash
+# install dependencies
+$ yarn install
 
-1.  **Clone this repository.**
+# serve with hot reload at localhost:3000
+$ yarn dev
 
-    ```sh
-    git clone https://github.com/ithunter101/nuxt-markdown.git
-    ```
+# build for production and launch server
+$ yarn build
+$ yarn start
 
-2.  **Start developing.**
+# generate static project
+$ yarn generate
+```
 
-    Navigate into your new site’s directory and start it up.
+For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
 
-    ```sh
-    npm install
-    npm run dev
-    ```
+## Special Directories
 
-3.  **Running!**
+You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
 
-    Your site is now running at `http://localhost:3000`!
+### `assets`
 
-## 🧐 What's inside?
+The assets directory contains your uncompiled assets such as Stylus or Sass files, images, or fonts.
 
-    .
-    ├── node_modules
-    ├── assets
-    ├── components
-    ├── contents
-      ├── en
-        ├── blog
-        ├── blogsEn.js
-      ├── es
-        ├── blog
-        ├── blogsEs.js
-    ├── layouts
-    ├── locales
-    ├── pages
-    ├── plugins
-    ├── static
-    ├── .gitignore
-    ├── LICENSE
-    ├── nuxt.config.js
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/assets).
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+### `components`
 
-2.  **`/assets`**: You will find the images and assets for the project. You can find more information at [Nuxt's assets directory documentation](https://nuxtjs.org/guide/assets/)
+The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your pages, layouts and even other components.
 
-3.  **`/components`**: Vue components for the project. You can find more information at [Nuxt's components directory documentation](https://nuxtjs.org/guide/directory-structure#the-components-directory)
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/components).
 
-4.  **`/contents`**: You will save your MD files here. They are divided by language and you will have to write the URL name of each of them at `blogsEn.js` and `blogsEs.js`.
+### `layouts`
 
-5.  **`/layouts`**: You can find information at [Nuxt's layout directory documentation](https://nuxtjs.org/guide/directory-structure#the-layouts-directory)
+Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
 
-6.  **`/locales`**: You will save your translations here.
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
 
-7.  **`/pages`**: You can find information at [Nuxt's pages directory documentation](https://nuxtjs.org/guide/directory-structure#the-pages-directory)
 
-8.  **`/plugins`**: You can find information at [Nuxt's plugins directory documentation](https://nuxtjs.org/guide/directory-structure#the-plugins-directory)
+### `pages`
 
-9.  **`/statics`**: You can find information at [Nuxt's statics directory documentation](https://nuxtjs.org/guide/directory-structure#the-static-directory)
+This directory contains your application views and routes. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
 
-10. **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/get-started/routing).
 
-11. **`LICENSE`**: This is licensed under the MIT license.
+### `plugins`
 
-12. **`nuxt-config.js`**: This is the main configuration file for a Nuxt site. This is where you can specify information about your site (metadata) like the site title and description, which Nuxt plugins you’d like to include, etc. (Check out the [config docs](https://nuxtjs.org/guide/configuration) for more detail).
+The plugins directory contains JavaScript plugins that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
 
-13. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/plugins).
 
-14. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+### `static`
 
-15. **`README.md`**: A text file containing useful reference information about your project.
+This directory contains your static files. Each file inside this directory is mapped to `/`.
 
-## 💫 Deploy
+Example: `/static/robots.txt` is mapped as `/robots.txt`.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/marinaaisa/nuxt-markdown-blog-starter)
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/static).
+
+### `store`
+
+This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
+
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).

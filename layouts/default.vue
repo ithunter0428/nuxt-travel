@@ -1,26 +1,31 @@
 <template>
-  <div class="layout">
-    <nuxt class="nuxt-content"/>
-    <Footer/>
+  <div class="flex-col min-h-screen">
+    <Nav></Nav>
+    <main class="flex-grow">
+      <transition name="home">
+        <Nuxt />
+      </transition>
+    </main>
+    <Footer></Footer>
   </div>
 </template>
+
 <script>
-  import Footer from '~/components/Sections/Footer'
-
-  export default {
-    components: {
-      Footer
-    }
-  }
-</script>
-<style lang="scss">
-.layout {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+import Nav from '@/components/nav'
+import Footer from '@/components/footer'
+export default {
+  // eslint-disable-next-line vue/no-unused-components
+  components: { Nav, Footer },
 }
+</script>
 
-.nuxt-content {
-  flex-grow: 1;
+<style>
+.home-enter-active,
+.home-leave-active {
+  transition: opacity 1s;
+}
+.home-enter,
+.home-leave-active {
+  opacity: 0;
 }
 </style>
